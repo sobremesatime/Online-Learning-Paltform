@@ -12,6 +12,5 @@ public interface CourseBaseInfoService {
      * @param queryCourseParamsDto 条件条件
      * @return
      */
-    PageResult<CourseBase> queryCourseBaseList(PageParams pageParams,
-                                               QueryCourseParamsDto queryCourseParamsDto);
+    PageResult<CourseBase> queryCourseBaseList(PageParams pageParams, QueryCourseParamsDto queryCourseParamsDto);
 }
