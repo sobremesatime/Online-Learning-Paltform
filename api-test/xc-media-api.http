@@ -5,5 +5,15 @@ Content-Type: application/json
 {
   "auditStatus": "202004",
   "courseName": "",
-  "publishStatus": "23001"
+  "publishStatus": ""
 }
+
+### 上传文件
+POST {{media_host}}/media/upload/coursefile
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="filedata"; filename="Blue.jpg"
+Content-Type: application/octet-stream
+
+< C:/Users/long/Pictures/Camera Roll/Blue.jpg
